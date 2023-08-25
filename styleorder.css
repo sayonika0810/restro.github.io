@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;500;800&display=swap');
+
+:root{
+    --green:#27ae60;
+    --black:#192a56;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,0.1);
+}
+*{
+    font-family: 'Roboto Slab', serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    top:0; left:0; right: 0;
+    background: #fff;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index:1000;
+    box-shadow:var(--box-shadow);
+    color:var(--green);
+}
+.logo{
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+.logo i{
+    color: var(--green);
+}
+.navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color:var(--light-color);
+}
+
+.navbar a.active, .navbar a:hover{
+    color:#fff;
+    background: var(--green);
+}
+
+.icons i, .icons a{
+    cursor:pointer;
+    margin-left: .5rem;
+    height:4.5rem;
+    line-height: 4.5rem;
+    width:4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--black);
+    border-radius: 50%;
+    background: #eee;
+}
+
+.icons i:hover, .icons a:hover{
+    color:#fff;
+    background: var(--green);
+    transform: rotate(360deg);
+}
+.icons #menu-bars{
+    display: none;
+ }
+
+
+
+
+ section{
+    padding: 2rem 9%;
+ }
+ .sub-heading{
+    text-align:center;
+    color: var(--green);
+    font-size: 3rem;
+    padding-top: 5rem;
+ }
+ .heading{
+    text-align:center;
+    color: var(--black);
+    font-size: 5rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+ }
+ .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--black);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: 0.8rem 3rem;
+ }
+ .btn:hover{
+    background: var(--green);
+    letter-spacing: .1rem;
+ }
+
+
+
+ .order form{
+    max-width: 90rem;
+    border-radius: .5rem;
+    background: #fff;
+    border: .1rem solid rgba(0,0,0,0.2);
+    box-shadow: var(--box-shadow);
+    padding: 1.5rem;
+    margin: auto;
+ }
+ .order form .inputbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+ .order form .inputbox .input{
+    width: 49%;
+ }
+ .order form .inputbox .input span{
+    display: block;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    color: var(--light-color);
+ }
+ input, textarea{
+    background: #eee;
+    font-size: 1.5rem;
+    color: var(--black);
+    padding: 1rem;
+    border-radius: .5rem;
+    text-transform: none;
+    margin-bottom: 1rem;
+    width: 100%;
+ }
+ textarea{
+    height: 20rem;
+    resize: none;
+ }
+
+
+
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:.5rem;
+}
+.footer .box-container .box h3{
+    padding:.5rem 0;
+    font-size:1.2rem;
+    color: var(--black);
+}
+.footer .box-container .box a{
+    display: block;
+    padding:.5rem 0;
+    font-size: 1.2rem;
+    color: var(--light-color);
+}
+.footer .box-container .box a:hover{
+    color: var(--green);
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 1rem 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+ }
+ @media(max-width:768px){
+    .icons #menu-bars{
+        display: inline-block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100px; left: 0; right: 0;
+        background:#fff;
+        border-top: 1 rem solid rgba(0,0,0,0.2);
+        border-bottom:1 rem solid rgba(0,0,0,0.2) ;
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .navbar a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: #eee;
+    }
+    .content h3{
+        font-size: 5rem;
+    }
+ }
+ @media(max-width:991px){
+    html{
+        font-size: 50%;
+    }
+    .order form .inputbox .input{
+        width: 100%;
+     }
+ }
