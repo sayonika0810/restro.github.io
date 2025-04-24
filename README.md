@@ -33,5 +33,18 @@ A sleek, responsive restaurant website built with HTML, CSS, and JavaScript. Des
 
 ---
 
-## 📂 Project Structure
+## 💡 Inspiration
+
+This project was developed to enhance my front-end development skills and to create a visually appealing website for a fictional restaurant. It serves as a portfolio piece to demonstrate proficiency in web design and development.
+
+---
+
+## 📬 Contact
+
+**Sayonika Pal**  
+[LinkedIn](https://www.linkedin.com/in/sayonikapal/) | [GitHub](https://github.com/sayonika0810) | [Email](mailto:sayonikapal@example.com)
+
+---
+
+
 
